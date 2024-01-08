@@ -129,17 +129,17 @@ RETURN WeekStartDate `
 
 7. **Key Measures:**
 Created the following Key Meausres in the Measures_Table using the following DAX formulas:
-   - Total Orders: Count of orders in the Orders table.
+   - **Total Orders**: Count of orders in the Orders table.
       -  `Total_Orders = COUNTROWS(VALUES('Orders'[UserID]))`
-   - Total Revenue: Sum of (Product Quantity * Sale_Price) for each order.
+   - **Total Revenue**: Sum of (Product Quantity * Sale_Price) for each order.
       - `Total_Revenue = SUMX(Orders, Orders[ProductQty] * RELATED(Products[SalePrice])) `
-   - Total Profit: Sum of (Product Quantity * (SalePrice - CostPrice)) for each order.
+   - **Total Profit**: Sum of (Product Quantity * (SalePrice - CostPrice)) for each order.
       - `Total_Profit = SUMX(Orders, (RELATED(Products[SalePrice]) - RELATED(Products[CostPrice])) * Orders[ProductQty]) ` 
-   - Total Customers: Count of unique customers in the Orders table.
+   - **Total Customers**: Count of unique customers in the Orders table.
       - `TotalCustomers = DISTINCTCOUNT(Orders[UserID]) `
-   - Total Quantity: Count of items sold in the Orders table.
+   - **Total Quantity**: Count of items sold in the Orders table.
       - `Total_Quantity = SUM(Orders[ProductQty]) `
-   - Profit YTD: Total profit for the current year.
+   - **Profit YTD**: Total profit for the current year.
       - ` Profit_YTD = 
 CALCULATE(
     SUMX(
@@ -150,7 +150,7 @@ CALCULATE(
         (RELATED(Products[SalePrice]) - RELATED(Products[CostPrice])) * Orders[ProductQty]
     )
 )`
-   - Revenue YTD: Total revenue for the current year.
+   - **Revenue YTD**: Total revenue for the current year.
      -  `Revenue_YTD = 
 CALCULATE(
     SUMX(
@@ -179,5 +179,4 @@ CALCULATE(
 ![Screenshot of Current Model](<Images/Screenshot 2024-01-08 at 12.03.29.png>)
 ---
 
-# Milestone 3: Set up the Report
-<a name="Milestone-3"></a>
+# <a name="Milestone-3"></a> Milestone 3: Set up the Report
