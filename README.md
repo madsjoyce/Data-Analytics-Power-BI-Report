@@ -1,4 +1,5 @@
 # Data-Analytics-Power-BI-Report
+![BI 2](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/0f5d8eec-f56b-4465-8959-623ac2d7b49e)
 
 # Table of Contents
 <a name="Milestone-3"></a>
@@ -225,3 +226,87 @@ CALCULATE(
 ---
 
 # <a name="Milestone-5"></a> Milestone 5: Building the Executive Summary Page
+
+## Copying and Arranging Cards:
+
+1. Copied a grouped card visual from the Customer Details page.
+2. Pasted it onto the Executive Summary page.
+3. Duplicated the card two more times.
+4. Arranged the three cards to span about half of the width of the page.
+5. Assigned them to `Total Revenue`, `Total Orders`, and `Total Profit` measures.
+
+## Format Cards:
+
+6. Used the Format > Callout Value pane:
+   - Ensure there were no more than 2 decimal places for Revenue and Profit cards.
+   - Set 1 decimal place for the Total Orders measure.
+
+## Line Chart:
+
+7. Copied the line graph from the Customer Detail page.
+8. Set X-axis to `Date Hierarchy` with `Start of Year`, `Start of Quarter`, and `Start of Month levels`.
+9. Set Y-axis to Total Revenue.
+10. Positioned the line chart just below the cards.
+
+## Donut Charts:
+
+11. Added two donut charts:
+   - `Total Revenue` breakdown by `Store[Country]`.
+   - `Total Revenue` breakdown by `Store[Store Type]`.
+
+## Bar Chart:
+
+14. Copied the `Total Customers` by `Product Category` column chart.
+15. In the on-object Build a visual pane, I changed the visual type to Clustered bar chart.
+16. Changed the X-axis field from `Total Customers` to `Total Orders`.
+17. Altered the colour for my theme in the Colours tab.
+  
+## KPIs for Quarterly Targets:
+
+18. Used the following DAX to create the following measures:
+   - Previous Quarter Profit.
+      - `Previous Quarter Profit = 
+    CALCULATE(
+        [Total Profit],
+        DATEADD('Dates'[Start_of_Quarter], -1, QUARTER)
+    )`
+   - Previous Quarter Revenue.
+      - `Previous Quarter Revenue = 
+      CALCULATE(
+         [Total Revenue],  
+          DATEADD('Dates'[Start_of_Quarter], -1, QUARTER)
+      )`
+   - Previous Quarter Orders.
+      - `Previous Quarter Orders = 
+      CALCULATE(
+         [Total Orders],  
+          DATEADD('Dates'[Start_of_Quarter], -1, QUARTER)
+      )`
+   - Targets (5% growth in each measure compared to the previous quarter).
+      - `Target Profit = 
+   [Previous Quarter Profit] * 1.05`
+      - `Target Revenue = 
+   [Previous Quarter Revenue] * 1.05`
+      -`Target Orders = 
+   [Previous Quarter Orders] * 1.05`
+
+19. Added a new KPI for Total Revenue, Total Profit and Total Orders:
+   - Value field: Total Revenue.
+   - Trend Axis: Start of Quarter.
+   - Target: Target Revenue.
+
+20. In the Format pane:
+   - Set Trend Axis to On.
+   - Set Direction to High is Good.
+   - Set Bad Colour to red.
+   - Set Transparency to 15%.
+
+21. Formatted the Callout Value to show only 1 decimal place.
+
+22. Duplicated the card two more times.
+23. Set appropriate values for the Profit and Orders cards.
+
+---
+# <a name="Milestone-6"></a> Milestone 6: Creating the Product Detail Page
+
+
