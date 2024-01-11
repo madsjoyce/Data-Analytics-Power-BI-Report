@@ -12,14 +12,14 @@
 <a name="Milestone-10"></a>
 
 1. [Milestone 1: Importing and Preparing Orders Table](#Milestone-1) 
-2. [Milestone 2: Create the Data Model](#Milestone-2)
-3. [Milestone 3: Set up the Report](#Milestone-3)
-4. [Milestone 4: Build the Customer Detail Page](#Milestone-4)
-5. [Milestone 5: Create an Executive Summary Page](#Milestone-5)
-6. [Milestone 6: Create a Product Detail Page](#Milestone-6)
-7. [Milestone 7: Create a sttores Map Page](#Milestone-7)
+2. [Milestone 2: Creating the Data Model](#Milestone-2)
+3. [Milestone 3: Setting up the Report](#Milestone-3)
+4. [Milestone 4: Building the Customer Detail Page](#Milestone-4)
+5. [Milestone 5: Creating an Executive Summary Page](#Milestone-5)
+6. [Milestone 6: Creating a Product Detail Page](#Milestone-6)
+7. [Milestone 7: Creating a sttores Map Page](#Milestone-7)
 8. [Milestone 8: Cross Filtering and Navigation](#Milestone-8)
-9. [Milestone 9: Create Metrics for Users outside the comany using SQL](#Milestone-9)
+9. [Milestone 9: Creating Metrics for Users outside the comany using SQL](#Milestone-9)
 ---
 **Note:** As I am a Mac user, I first had to create a Windows VM for this project. These are the steps I followed in order to do this:
 1. Access Azure
@@ -82,7 +82,7 @@ This milestone involved connecting to various data sources, importing tables int
 
 
 ---
-# <a name="Milestone-2"></a> Milestone 2: Create the Data Model
+# <a name="Milestone-2"></a> Milestone 2: Creating the Data Model
 
 
 
@@ -180,7 +180,7 @@ CALCULATE(
 ![Screenshot of Current Model](<Images/Screenshot 2024-01-08 at 12.03.29.png>)
 ---
 
-# <a name="Milestone-3"></a> Milestone 3: Set up the Report
+# <a name="Milestone-3"></a> Milestone 3: Setting up the Report
 
 1. **Creating report pages:** Created an Executive Summary page, Customer Detail,p gae Product Detail page and Stores Map page.
 2. **Selecting a colour theme:** I selected a colour theme that I thought would look good as a finished report. 
