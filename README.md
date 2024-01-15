@@ -317,42 +317,76 @@ CALCULATE(
 
 ## Filter Placeholder Shapes
 
-- Added rectangle shapes for card visuals.
-- Used a color in keeping with the theme.
+7. Added rectangle shapes for card visuals.
+8. Used a color in keeping with the theme.
 
 ## Area Chart for Product Categories
 
-- Added an area chart for revenue over time.
-- Configured X-axis to `Dates[Start of Quarter]`.
-- Y-axis values to `Total Revenue`.
-- Legend to `Products[Category]`.
+9. Added an area chart for revenue over time.
+10. Configured X-axis to `Dates[Start of Quarter]`.
+11. Y-axis values to `Total Revenue`.
+12. Legend to `Products[Category]`.
 
 ## Top 10 Products Table
 
-- Copied the top customer table from `Customer Detail` page.
-- Included fields: `Product Description`, `Total Revenue`, `Total Customers`, `Total Orders`, `Profit per Order`.
+13. Copied the top customer table from `Customer Detail` page.
+14. Included fields: `Product Description`, `Total Revenue`, `Total Customers`, `Total Orders`, `Profit per Order`.
 
 ## Scatter Graph for Promotional Suggestions
 
-- Created a calculated column `[Profit per Item]` by using the following DAX formula: `Profit per Item = SUMX(Products,Products[SalePrice] - Products[CostPrice])`
-- Added a scatter chart with X-axis as `[Profit per Item]` and Y-axis as `[Total Quantity]`.
-- Set Legend to `Products[Category]`.
+15. Created a calculated column `[Profit per Item]` by using the following DAX formula: `Profit per Item = SUMX(Products,Products[SalePrice] - Products[CostPrice])`
+16. Added a scatter chart with X-axis as `[Profit per Item]` and Y-axis as `[Total Quantity]`.
+17. Set Legend to `Products[Category]`.
 
 ## Slicer Panel with Bookmarks
 
-- Downloaded custom icons collection.
-- Added a custom icon button to the navigation bar.
-- Created a rectangle shape for slicer panel.
-- Add two vertical list slicers:` Products[Category]` and `Stores[Country]`.
-- Configured slicers for neat formatting.
-- Grouped slicers with the slicer toolbar shape.
-- Added a Back button and positioned it sensibly.
-- Created bookmarks for open and closed states of the toolbar.
-- Assigned actions to buttons using bookmarks.
+18. Downloaded custom icons collection.
+19. Added a custom icon button to the navigation bar.
+20. Created a rectangle shape for slicer panel.
+21. Add two vertical list slicers:` Products[Category]` and `Stores[Country]`.
+22. Configured slicers for neat formatting.
+23. Grouped slicers with the slicer toolbar shape.
+24. Added a Back button and positioned it sensibly.
+25. Created bookmarks for open and closed states of the toolbar.
+26. Assigned actions to buttons using bookmarks.
 
 ---
 
 ## Milestone 7: Creating a Stores Map Page
+
+## Task 1: Add a Map Visual
+1. On the Stores Map page, I added a new map visual from the visualisations section.
+2. Set the style in the Format pane to my satisfaction and ensured Show Labels is set to On.
+3. Map Controls:
+  - Auto-Zoom: On
+  - Zoom buttons: Off
+  - Lasso button: Off
+4. Assigned Geography hierarchy to the Location field, and ProfitYTD to the Bubble size field.
+
+## Task 2: Add a Country Slicer
+5. Added a slicer above the map.
+6. Set the slicer field to `Stores[Country]`.
+7. Formatted the slicer:
+  - Slicer style as Tile.
+  - Selection settings to Multi-select with Ctrl/Cmd.
+  - Show "Select All" as an option in the slicer.
+
+## Task 3: Create a Store Drillthrough Page
+8. Created a new page named `Stores Drillthrough`.
+9. Opened the format pane and expanded the Page information tab.
+10. Set the Page type to Drillthrough.
+11. Set Drill through when to Used as category.
+12. Set Drill through from to country region.
+13. Added the following visuals to the drillthrough page:
+  - A table showing the top 5 products with columns: Description, Profit YTD, Total Orders, Total Revenue.
+  - A column chart showing Total Orders by product category for the store.
+  - Gauges for Profit YTD against a profit target of 20% year-on-year growth vs. the same period in the previous year, using the Target field, not the Maximum Value field.
+  - A Card visual showing the currently selected store.
+
+## Task 4: Create a Store's Tooltip Page
+14. Created a new page named Store's Tooltip.
+15. Copied over the Profit Gauge visual from the drillthrough page.
+16. Set the tooltip of the visual to the Store's Tooltip page.
 
 ---
 
