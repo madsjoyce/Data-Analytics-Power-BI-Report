@@ -371,6 +371,11 @@ CALCULATE(
   - Selection settings to Multi-select with Ctrl/Cmd.
   - Show "Select All" as an option in the slicer.
 
+Finished Stores Map page:
+
+<img width="1038" alt="Screenshot 2024-01-15 at 16 15 01" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/7ddf5fa2-5bdc-4192-86a6-7e63f360e098">
+
+
 ## Task 3: Create a Store Drillthrough Page
 8. Created a new page named `Stores Drillthrough`.
 9. Opened the format pane and expanded the Page information tab.
@@ -383,10 +388,20 @@ CALCULATE(
   - Gauges for Profit YTD against a profit target of 20% year-on-year growth vs. the same period in the previous year, using the Target field, not the Maximum Value field.
   - A Card visual showing the currently selected store.
 
+Finished Drillthrough page:
+-    <img width="1040" alt="Screenshot 2024-01-15 at 16 16 00" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/b28c47c9-936c-419b-b4b2-387b669ea5f9">
+
+
 ## Task 4: Create a Store's Tooltip Page
 14. Created a new page named Store's Tooltip.
 15. Copied over the Profit Gauge visual from the drillthrough page.
 16. Set the tooltip of the visual to the Store's Tooltip page.
+
+Finished Tooltip page:
+-    <img width="365" alt="Screenshot 2024-01-15 at 16 17 05" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/6b24791d-4792-4198-bda6-c8584932acfb">
+
+Finished Tooltip on Map Page:
+-    <img width="1639" alt="Screenshot 2024-01-15 at 16 19 38" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/41b97b6c-4f4e-41b8-883c-db24b1fa4219">
 
 ---
 
