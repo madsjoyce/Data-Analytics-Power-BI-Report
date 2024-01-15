@@ -2,24 +2,17 @@
 ![BI 2](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/0f5d8eec-f56b-4465-8959-623ac2d7b49e)
 
 # Table of Contents
-<a name="Milestone-3"></a>
-<a name="Milestone-4"></a>
-<a name="Milestone-5"></a>
-<a name="Milestone-6"></a>
-<a name="Milestone-7"></a>
-<a name="Milestone-8"></a>
-<a name="Milestone-9"></a>
-<a name="Milestone-10"></a>
 
-1. [Milestone 1: Importing and Preparing Orders Table](#Milestone-1) 
-2. [Milestone 2: Creating the Data Model](#Milestone-2)
-3. [Milestone 3: Setting up the Report](#Milestone-3)
-4. [Milestone 4: Building the Customer Detail Page](#Milestone-4)
-5. [Milestone 5: Creating an Executive Summary Page](#Milestone-5)
-6. [Milestone 6: Creating a Product Detail Page](#Milestone-6)
-7. [Milestone 7: Creating a sttores Map Page](#Milestone-7)
-8. [Milestone 8: Cross Filtering and Navigation](#Milestone-8)
-9. [Milestone 9: Creating Metrics for Users outside the comany using SQL](#Milestone-9)
+1. [Milestone 1: Importing and Preparing Orders Table](#milestone-1-importing-and-preparing-orders-table)
+2. [Milestone 2: Creating the Data Model](#milestone-2-creating-the-data-model)
+3. [Milestone 3: Setting up the Report](#milestone-3-setting-up-the-report)
+4. [Milestone 4: Building the Customer Detail Page](#milestone-4-building-the-customer-detail-page)
+5. [Milestone 5: Creating an Executive Summary Page](#milestone-5-creating-an-executive-summary-page)
+6. [Milestone 6: Creating a Product Detail Page](#milestone-6-creating-a-product-detail-page)
+7. [Milestone 7: Creating a Stores Map Page](#milestone-7-creating-a-stores-map-page)
+8. [Milestone 8: Cross Filtering and Navigation](#milestone-8-cross-filtering-and-navigation)
+9. [Milestone 9: Creating Metrics for Users Outside the Company Using SQL](#milestone-9-creating-metrics-for-users-outside-the-company-using-sql)
+
 ---
 **Note:** As I am a Mac user, I first had to create a Windows VM for this project. These are the steps I followed in order to do this:
 1. Access Azure
@@ -27,7 +20,7 @@
 3. Connect my VM to my local machine. I did this by Utilising Microsoft Remote Desktop.
 
 --- 
-# <a name="Milestone-1"></a> Milestone 1: Data Import and Transformation 
+# Milestone 1: Importing and Preparing Orders Table
 
 
 Below are three different dataframes that I needed to import and transform as part of my project. Each section reveals the steps I took to do this.
@@ -82,8 +75,7 @@ This milestone involved connecting to various data sources, importing tables int
 
 
 ---
-# <a name="Milestone-2"></a> Milestone 2: Creating the Data Model
-
+# Milestone 2: Creating the Data Model
 
 
 ## Continuous Date Table Creation
@@ -180,7 +172,7 @@ CALCULATE(
 ![Screenshot of Current Model](<Images/Screenshot 2024-01-08 at 12.03.29.png>)
 ---
 
-# <a name="Milestone-3"></a> Milestone 3: Setting up the Report
+# Milestone 3: Setting up the Report
 
 1. **Creating report pages:** Created an Executive Summary page, Customer Detail,p gae Product Detail page and Stores Map page.
 2. **Selecting a colour theme:** I selected a colour theme that I thought would look good as a finished report. 
@@ -190,7 +182,7 @@ CALCULATE(
 
 
 
-# <a name="Milestone-4"></a> Milestone 4: Building the Customer Detail Page
+# Milestone 4: Building the Customer Detail Page
 
 ## Creating Headline Card Visiuals 
 1. Created two rectangles and arrange them in the top left corner of the page. These served as the backgrounds for the card visuals.
@@ -225,7 +217,7 @@ CALCULATE(
 
 ---
 
-# <a name="Milestone-5"></a> Milestone 5: Building the Executive Summary Page
+# Milestone 5: Creating an Executive Summary Page
 
 ## Copying and Arranging Cards:
 
@@ -307,6 +299,67 @@ CALCULATE(
 23. Set appropriate values for the Profit and Orders cards.
 
 ---
-# <a name="Milestone-6"></a> Milestone 6: Creating the Product Detail Page
+# Milestone 6: Creating a Product Detail Page
 
+## Gauges for Current-Quarter Performance
 
+1. Added three gauges for Orders, Revenue, and Profit.
+2. Defined DAX measures for metrics and quarterly targets:
+      -  `10% Target Quarter Orders = 
+   'Measures_Table'[Previous Quarter Orders] * 1.1`
+      - Current Quarter Orders = 
+      CALCULATE(
+      TOTALQTD('Measures_Table'[Total Orders],'Dates'[Date])
+      )`
+4. Set maximum gauge values to quarterly targets.
+5. Applied conditional formatting to callout values so that it remains red until the target is reached.
+6. Arranged gauges evenly along the top of the report.
+
+## Filter Placeholder Shapes
+
+- Added rectangle shapes for card visuals.
+- Used a color in keeping with the theme.
+
+## Area Chart for Product Categories
+
+- Added an area chart for revenue over time.
+- Configured X-axis to `Dates[Start of Quarter]`.
+- Y-axis values to `Total Revenue`.
+- Legend to `Products[Category]`.
+
+## Top 10 Products Table
+
+- Copied the top customer table from `Customer Detail` page.
+- Included fields: `Product Description`, `Total Revenue`, `Total Customers`, `Total Orders`, `Profit per Order`.
+
+## Scatter Graph for Promotional Suggestions
+
+- Created a calculated column `[Profit per Item]` by using the following DAX formula: `Profit per Item = SUMX(Products,Products[SalePrice] - Products[CostPrice])`
+- Added a scatter chart with X-axis as `[Profit per Item]` and Y-axis as `[Total Quantity]`.
+- Set Legend to `Products[Category]`.
+
+## Slicer Panel with Bookmarks
+
+- Downloaded custom icons collection.
+- Added a custom icon button to the navigation bar.
+- Created a rectangle shape for slicer panel.
+- Add two vertical list slicers:` Products[Category]` and `Stores[Country]`.
+- Configured slicers for neat formatting.
+- Grouped slicers with the slicer toolbar shape.
+- Added a Back button and positioned it sensibly.
+- Created bookmarks for open and closed states of the toolbar.
+- Assigned actions to buttons using bookmarks.
+
+---
+
+## Milestone 7: Creating a Stores Map Page
+
+---
+
+## Milestone 8: Cross Filtering and Navigation
+
+---
+
+## Milestone 9: Creating Metrics for Users Outside the Company Using SQL
+
+---
