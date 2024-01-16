@@ -232,6 +232,8 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 11. Added two donut charts:
    - `Total Revenue` breakdown by `Store[Country]`.
    - `Total Revenue` breakdown by `Store[Store Type]`.
+       -  <img width="182" alt="Screenshot 2024-01-16 at 15 19 22" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/5669f5ef-a986-4a7e-b6ad-2bb04aa0dadf"> <img width="178" alt="Screenshot 2024-01-16 at 15 24 17" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/453a5428-a1bb-47d0-95d0-9796fcc3f80f">
+
 
 ## Bar Chart:
 
@@ -442,7 +444,7 @@ For Example:
 17. Copied the group across to the other pages.
 
 Finished Navigation Bar:
--   <img width="1157" alt="Screenshot 2024-01-16 at 14 52 53" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/bc862be1-eee9-4e9a-a00e-169f045a0711">
+- <img width="1149" alt="Screenshot 2024-01-16 at 15 26 58" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/14337b95-93f9-4a4f-a488-a8e08b2d2284">
 
 ---
 
