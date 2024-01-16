@@ -407,6 +407,53 @@ Finished Tooltip on Map Page:
 
 ## Milestone 8: Cross Filtering and Navigation
 
+## Task 1: Fix Cross Filtering
+To do this, I clicked on the 'Edit Interactions' button for the visualisation I wanted to cross-filter. I then selected the filter icon and selected the correct type of cross filtering needed for the other visualisations.
+
+For example, in this cross filtering for the Total Customers by Product Bar Chart on the Customer Details page, I selected the small <img width="44" alt="Screenshot 2024-01-16 at 11 51 10" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/27710209-f79e-494f-abc8-b15c2e6f2a40"> icon so that there would be no impact on the Customers Line Graph.
+
+
+<img width="1209" alt="Screenshot 2024-01-16 at 11 54 00" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/4735621a-a027-40c9-8fbe-5afe723a3abe">
+
+## Here's the cross-filtering I did for this report's pages:
+
+### Executive Summary Page
+1. Product Category bar chart and Top 10 Products table not filtering the card visuals or KPIs.
+
+### Customer Detail Page
+2. Top 20 Customers table not filtering any of the other visuals.
+3. Total Customers by Product Category Bar Chart not affecting the Customers line graph.
+4. Total Customers by Country Donut chart cross-filter Total Customers by Product Donut Chart.
+
+### Product Detail Page
+
+5. Orders vs. Profitability scatter graph not affecting any other visuals.
+6. Top 10 Products table not affectinf any other visuals.
+
+## Task 2: Finishing the Navigation Bar
+
+For each page, there was a custom icon available in the custom icons collection:
+7. Using the white version for the default button appearance.
+8. setting the blue version for the button when hovered over with the mouse pointer.
+
+### Executive Summary Page Sidebar
+
+9. Added four new blank buttons.
+10. In the Format > Button Style pane, set Apply settings to Default.
+11. Set each button icon to the relevant white png in the Icon tab.
+12. For each button, set Apply settings to On Hover, and selected the alternative colourway of the relevant button under the Icon tab.
+13. Turned on the Action format option for each button.
+14. Selected the type as Page navigation.
+15. Selected the correct page under Destination.
+For Example:
+   - <img width="180" alt="Screenshot 2024-01-16 at 14 44 01" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/1325a5c6-3db1-4934-9c45-e81992b41933"> <img width="174" alt="Screenshot 2024-01-16 at 14 46 43" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/cb79f2da-744d-40eb-89f9-051d858ac2ae">
+
+
+### Replicate Across Other Pages
+
+16. Grouped the buttons together.
+17. Copied the group across to the other pages.
+
 ---
 
 ## Milestone 9: Creating Metrics for Users Outside the Company Using SQL
