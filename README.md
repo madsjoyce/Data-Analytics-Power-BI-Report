@@ -92,27 +92,29 @@ This milestone involved connecting to various data sources, importing tables int
 
 ![Alt text](<Images/Screenshot 2024-01-08 at 11.45.38.png>)
 
-- I then Used the following DAX forumlas separately:
+- I then Used the following DAX forumlas separately to create the following DateTime measures:
 
       - Start of Year: `Start_of_Year = STARTOFYEAR('Dates'[Date])   `
       - Start of Quarter: `Start_of_Quarter = STARTOFQUARTER(Dates[Date]) `
       - Start of Month: `Start_of_Month = STARTOFMONTH(Dates[Date]) `
       - Start of Week: `Start_of_Week = VAR WeekStartDate = [Date] - WEEKDAY([Date], 2) + 1
-RETURN WeekStartDate `
+         RETURN WeekStartDate`
+
 
 
 ## Star Schema and Relationships
 
 3. **Star Schema:** Established a star schema by creating relationships between tables.
+   -  <img width="909" alt="Screenshot 2024-01-16 at 14 57 30" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/670afa81-24d0-44b5-9a5e-09232e69d73d">
    
-4. **Table Relationships:**
+5. **Table Relationships:**
    - Orders[ProductCode] to Products[ProductCode]
    - Orders[StoreCode] to Stores[StoreCode]
    - Orders[UserID] to Customers[UserUUID]
    - Orders[OrderDate] to Date[Date]
    - Orders[ShippingDate] to Date[Date]
 
-5. **Active Relationship:** Ensured the relationship between Orders[Order Date] and Date[date] is an active relationship with a one-to-many relationship.
+6. **Active Relationship:** Ensured the relationship between Orders[Order Date] and Date[date] is an active relationship with a one-to-many relationship.
 
 ## Measures Table Creation
 
@@ -133,39 +135,24 @@ Created the following Key Meausres in the Measures_Table using the following DAX
    - **Total Quantity**: Count of items sold in the Orders table.
       - `Total_Quantity = SUM(Orders[ProductQty]) `
    - **Profit YTD**: Total profit for the current year.
-      - ` Profit_YTD = 
-CALCULATE(
-    SUMX(
-        FILTER(
-            ALL(Orders),
-            YEAR(Orders[OrderDate]) = YEAR(TODAY())
-        ),
-        (RELATED(Products[SalePrice]) - RELATED(Products[CostPrice])) * Orders[ProductQty]
-    )
-)`
+      - ` Profit_YTD = TOTALYTD(Measures_Table[Total Profit], Dates[Date])`
    - **Revenue YTD**: Total revenue for the current year.
-     -  `Revenue_YTD = 
-CALCULATE(
-    SUMX(
-        FILTER(
-            ALL(Orders),
-            YEAR(Orders[OrderDate]) = YEAR(TODAY())
-        ),
-        (RELATED(Products[SalePrice]) * Orders[ProductQty])
-    )
-) `
+     -  `Revenue YTD = TOTALYTD(Measures_Table[Total Revenue], Dates[Date])`
 
 ## Hierarchies
 
 8. **Date Hierarchy:** Created a date hierarchy with levels: Start of Year, Start of Quarter, Start of Month, Start of Week, Date for drill-down in line charts.
+   - <img width="283" alt="Screenshot 2024-01-16 at 15 00 23" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/d0b48747-1d4d-4ac9-b231-5042b7b937a7">
 
 9. **Geography Hierarchy:** Created a geography hierarchy with levels: World Region, Country, Country Region for data filtering.
+   - <img width="277" alt="Screenshot 2024-01-16 at 15 00 00" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/4edf7436-eae2-49e7-9dbe-abe3dad93734">
 
 10. **Country and Geography Columns:** Added calculated columns in the Stores table for a full country name and geography based on specified schemes.
+    - Using the following DAX Formula: <img width="207" alt="Screenshot 2024-01-16 at 15 02 42" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/c88d2aa0-56c7-4a8f-ad9c-c143662d7a76">
 
 ## Data Categorisation
 
-11. **Data Categories:** Ensured correct data categories for specific columns (World Region, Country, Country Region) for accurate mapping.
+11. **Data Categories:** Ensured specific columns (World Region, Country, Country Region) were categorised correctly for accurate mapping.
 ---
 **Model View:** Please see the screenshot below for the up-to-date model view for this project.
 
@@ -174,13 +161,11 @@ CALCULATE(
 
 # Milestone 3: Setting up the Report
 
-1. **Creating report pages:** Created an Executive Summary page, Customer Detail,p gae Product Detail page and Stores Map page.
+1. **Creating report pages:** Created an Executive Summary page, Customer Detail page, Product Detail page and Stores Map page.
 2. **Selecting a colour theme:** I selected a colour theme that I thought would look good as a finished report. 
-3. **Adding Navigation sidebars:** added a rectangle shape covering a narrow strip on the left side of each page. This would be the sidebar that we will use to navigate between pages later in our report build.
+3. **Adding Navigation sidebars:** added a rectangle shape covering a narrow strip on the left side of each page. This would be the sidebar that we will use to navigate between pages later in my report build.
 
 ---
-
-
 
 # Milestone 4: Building the Customer Detail Page
 
@@ -200,20 +185,22 @@ CALCULATE(
 
 ## Creating the Line Chart
 
-7. Added a Line Chart visual to the top of the page, that showed `[Total Customers]` on the Y axis, and use the Date Hierarchy I created in Step 8 of Milestone 2 for the X axis. I allow users to drill down to the month level, but not to weeks or individual dates.
+7. Added a Line Chart visual to the top of the page, that showed `[Total Customers]` on the Y axis, and use the Date Hierarchy I created in Step 8 of Milestone 2 for the X axis. I have allowed users to drill down to the month level, but not to weeks or individual dates.
+   - <img width="179" alt="Screenshot 2024-01-16 at 15 08 55" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/3f148d8c-7be0-4e37-894d-64097161e627">
 
 8. Added a trend line, and a forecast for the next 10 periods with a 95% confidence interval.
+   - <img width="180" alt="Screenshot 2024-01-16 at 15 12 57" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/43db306c-d6f3-41a9-9e27-0ee398a7105a"> <img width="180" alt="Screenshot 2024-01-16 at 15 09 36" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/0efd3673-489d-4702-aeed-04f2baa606b6">
 
 ## Creating Top Customer Table
 9. Created a new table, which displays the top 20 customers, filtered by revenue. The table shows each customer's full name, revenue, and number of orders.
-
+   - <img width="384" alt="Screenshot 2024-01-16 at 15 10 15" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/1311137d-6eb3-41e9-ab5f-c24fdd0cb311">
 10. Added conditional formatting to the revenue column, to display data bars for the revenue values. 
 
 ## Creating Top Customer Cards
 11. Created a set of three card visuals that provide insights into the top customer by revenue. They display the top customer's name, the number of orders made by the customer, and the total revenue generated by the customer.
 
 ## Adding a Date Sliccer
-12. Added a date slicer to allow users to filter the page by year, using the between slicer style. I did this by sekecting the date slicer visualisation, and only added Year to the field in Build a visual.
+12. Added a date slicer to allow users to filter the page by year, using the between slicer style. I did this by selecting the date slicer visualisation, and only adding Year to the field in Build a visual.
 
 ---
 
@@ -354,7 +341,7 @@ CALCULATE(
 
 ## Milestone 7: Creating a Stores Map Page
 
-## Task 1: Add a Map Visual
+## Task 1: Adding a Map Visual
 1. On the Stores Map page, I added a new map visual from the visualisations section.
 2. Set the style in the Format pane to my satisfaction and ensured Show Labels is set to On.
 3. Map Controls:
@@ -363,7 +350,7 @@ CALCULATE(
   - Lasso button: Off
 4. Assigned Geography hierarchy to the Location field, and ProfitYTD to the Bubble size field.
 
-## Task 2: Add a Country Slicer
+## Task 2: Adding a Country Slicer
 5. Added a slicer above the map.
 6. Set the slicer field to `Stores[Country]`.
 7. Formatted the slicer:
@@ -373,7 +360,7 @@ CALCULATE(
 
 Finished Stores Map page:
 
-<img width="1038" alt="Screenshot 2024-01-15 at 16 15 01" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/7ddf5fa2-5bdc-4192-86a6-7e63f360e098">
+-    <img width="1038" alt="Screenshot 2024-01-15 at 16 15 01" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/7ddf5fa2-5bdc-4192-86a6-7e63f360e098">
 
 
 ## Task 3: Create a Store Drillthrough Page
@@ -383,10 +370,10 @@ Finished Stores Map page:
 11. Set Drill through when to Used as category.
 12. Set Drill through from to country region.
 13. Added the following visuals to the drillthrough page:
-  - A table showing the top 5 products with columns: Description, Profit YTD, Total Orders, Total Revenue.
-  - A column chart showing Total Orders by product category for the store.
-  - Gauges for Profit YTD against a profit target of 20% year-on-year growth vs. the same period in the previous year, using the Target field, not the Maximum Value field.
-  - A Card visual showing the currently selected store.
+      - A table showing the top 5 products with columns: Description, Profit YTD, Total Orders, Total Revenue.
+      - A column chart showing Total Orders by product category for the store.
+      - Gauges for Profit YTD against a profit target of 20% year-on-year growth vs. the same period in the previous year, using the Target field, not the Maximum Value field.
+      - A Card visual showing the currently selected store.
 
 Finished Drillthrough page:
 -    <img width="1040" alt="Screenshot 2024-01-15 at 16 16 00" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/b28c47c9-936c-419b-b4b2-387b669ea5f9">
@@ -449,10 +436,13 @@ For Example:
    - <img width="180" alt="Screenshot 2024-01-16 at 14 44 01" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/1325a5c6-3db1-4934-9c45-e81992b41933"> <img width="174" alt="Screenshot 2024-01-16 at 14 46 43" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/cb79f2da-744d-40eb-89f9-051d858ac2ae">
 
 
-### Replicate Across Other Pages
+### Replicating Across Other Pages
 
 16. Grouped the buttons together.
 17. Copied the group across to the other pages.
+
+Finished Navigation Bar:
+-   <img width="1157" alt="Screenshot 2024-01-16 at 14 52 53" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/bc862be1-eee9-4e9a-a00e-169f045a0711">
 
 ---
 
