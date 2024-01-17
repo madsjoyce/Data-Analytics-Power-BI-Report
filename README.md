@@ -450,9 +450,9 @@ Finished Navigation Bar:
 
 ## Milestone 9: Creating Metrics for Users Outside the Company Using SQL
 
-### <ins>Connecting to the Database<ins>
+### <ins>Task 1: Connecting to the Database<ins>
 
-To connect to the PostgreSQL database and ran queries from Visual Studio Code, I followed these steps:
+To connect to the PostgreSQL database and run queries from Visual Studio Code, I followed these steps:
 
 ### Step 1: Installing SQLTools Extension
 
@@ -483,6 +483,176 @@ Filled in the connection details using information provided:
 
 After entering the connection details, I clicked the "Test Connection" button to ensure that the connection was successful.
 Now that I had successfully connected to the PostgreSQL database, I could open a new SQL file in Visual Studio Code, select my connection from the dropdown, start writing and executing SQL queries.
+# Database Exploration Tasks
 
+### <ins>Task 2: Check the Table and Column Names<ins>
+
+### Printing a List of Tables
+
+1. To understand the structure of the database, I started by printing a list of all tables and saving the result to a CSV file.
+   - I did this by using the following SQL Query:
+      ```sql
+         SELECT table_name
+         FROM information_schema.tables
+         WHERE table_schema = 'public'
+         AND table_type = 'BASE TABLE'
+         ORDER BY table_name;
+         ```
+**Execution Steps:**
+   * I executed the SQL query against my database.
+   * Saved the result locally to a CSV file named `table_names.csv` for reference.
+
+### Printing a List of Columns in the Orders Table
+
+2. Next, I explored the columns in the `orders` table and saved the result to a CSV file called `orders_columns.csv`.
+   - I did this by using the following SQL Query:
+      ```sql
+         SELECT column_name
+         FROM information_schema.columns
+         WHERE table_name = 'orders';
+      ```
+
+**Execution Steps:**
+   * Executed the SQL query against my database.
+   * Saved the result to a CSV file named `orders_columns.csv` for reference.
+
+### Repeating the Process for Other Tables
+
+3. For each table in the database, I then repeated the process of printing a list of columns and saving the results to CSV files with corresponding names.
+
+**Example SQL Query:**
+```sql
+-- Replacing 'your_table_name' with the actual table name
+SELECT column_name
+FROM information_schema.columns
+WHERE table_name = 'your_table_name';
+```
+
+**Execution Steps:**
+   * Executed the SQL query against your database for each table.
+   * Saved the results to CSV files with names matching the respective table names (e.g., `your_table_name_columns.csv`).
+
+> This process provided me with a comprehensive overview of the tables and columns in my database, aiding my exploration and analysis.
+
+### <ins>Task 3: Query the Databases<ins>
+Please follow these next steps and the SQL queries I used to answer the following questions:
+
+#### Question 1: How many staff are there in all of the UK stores?
+
+```sql
+-- SQL Query for Question 1
+SELECT 
+    country,
+    SUM(staff_numbers) AS total_staff
+FROM 
+    dim_store
+WHERE 
+    country = 'UK'
+GROUP BY 
+    country;```
+
+**Execution Steps:**
+   * Executed the SQL query against my database.
+   * Exported the result to a CSV file named `question_1.csv`.
+   * Saved the SQL query to a file named `question_1.sql`.
+     
+### Question 2: Which month in 2022 has had the highest revenue?
+
+```sql
+-- SQL Query for Question 2
+SELECT 
+    month_name, 
+    ROUND(SUM(sale_price * product_quantity)::numeric, 2) AS revenue_total
+FROM 
+    forquerying2
+WHERE 
+    EXTRACT(YEAR FROM dates::timestamp) = 2022
+GROUP BY 
+    month_name
+ORDER BY 
+    revenue_total DESC
+LIMIT 
+    1;
+```
+
+**Execution Steps:**
+   * Executed the SQL query against your database.
+   * Exported the result to a CSV file named `question_2.csv`.
+   * Saved the SQL query to a file named `question_2.sql`.
+
+### Question 3: Which German store type had the highest revenue for 2022?
+
+```sql
+-- SQL Query for Question 3
+SELECT 
+       store_type, 
+       country,
+        ROUND(SUM(sale_price * product_quantity)::numeric, 2) AS revenue
+FROM 
+       forquerying2
+WHERE 
+       EXTRACT(YEAR FROM dates::timestamp) = 2022 
+       AND country = 'Germany'
+GROUP BY 
+       store_type, country
+ORDER BY 
+       revenue DESC
+LIMIT 
+       1;
+```
+
+**Execution Steps:**
+   * Executed the SQL query against my database.
+   * Exported the result to a CSV file named `question_3.csv`.
+   * Saved the SQL query to a file named `question_3.sql`.
+
+### Question 4: Create a view with store types as rows and columns as total sales, percentage of total sales, and the count of orders
+
+```sql
+-- SQL Query for Question 4
+CREATE VIEW question_4 AS
+SELECT 
+    store_type,
+    ROUND(CAST(SUM(sale_price * product_quantity) AS numeric), 2) AS total_sales,
+    ROUND(CAST(SUM(sale_price * product_quantity) / SUM(SUM(sale_price * product_quantity)) OVER () * 100 AS numeric), 2) AS sales_percentage,
+    COUNT(order_date) AS orders
+FROM 
+    forview
+GROUP BY 
+    store_type;
+```
+
+**Execution Steps:**   
+   * Executed the SQL query against my database.
+   * Exported the result to a CSV file named `question_4.csv`.
+   * Saved the SQL query to a file named `question_4.sql`.
+
+### Question 5: Which product category generated the most profit for the "Wiltshire, UK" region in 2021?
+
+```sql
+-- SQL Query for Question 5
+SELECT 
+    category,
+    full_region AS region,
+    SUM(sale_price * product_quantity) AS total_revenue,
+    ROUND(SUM(cost_price * product_quantity)::numeric, 2) AS total_cost,
+    ROUND(SUM((sale_price * product_quantity) - (cost_price * product_quantity))::numeric, 2) AS total_profit
+FROM 
+    forquerying2
+WHERE 
+    EXTRACT(YEAR FROM dates::timestamp) = 2021 AND full_region = 'Wiltshire, UK'
+GROUP BY 
+    category, 
+    full_region
+ORDER BY 
+    total_profit DESC
+LIMIT 
+    1;
+```
+
+**Execution Steps:**
+   * Executed the SQL query against my database.
+   * Exported the result to a CSV file named `question_5.csv`.
+   * Saved the SQL query to a file named `question_5.sql`.
 
 ---
