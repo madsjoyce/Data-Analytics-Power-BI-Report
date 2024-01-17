@@ -202,7 +202,7 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 ## Adding a Date Sliccer
 12. Added a date slicer to allow users to filter the page by year, using the between slicer style. I did this by selecting the date slicer visualisation, and only adding Year to the field in Build a visual.
 
-Finished Customer Details page:
+__Finished Customer Details page:__
 - <img width="1067" alt="Screenshot 2024-01-17 at 17 46 46" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/4aa876dd-ba27-4594-b3d5-b588520b663b">
 
 ---
@@ -290,7 +290,7 @@ Finished Customer Details page:
 22. Duplicated the card two more times.
 23. Set appropriate values for the Profit and Orders cards.
 
-Finished Executive Summary Page:
+__Finished Executive Summary Page:__
 - <img width="1068" alt="Screenshot 2024-01-17 at 17 47 32" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/6ad753de-2d4e-48b2-8cc5-47169aa6582b">
 
 ---
@@ -345,7 +345,7 @@ Finished Executive Summary Page:
 25. Created bookmarks for open and closed states of the toolbar.
 26. Assigned actions to buttons using bookmarks.
 
-Finished Product Detail page:
+__Finished Product Detail page:__
 - <img width="1070" alt="Screenshot 2024-01-17 at 17 48 38" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/8f6fdb58-7b52-4d25-93c5-d19f4d9b7a40">
 
 ---
@@ -369,7 +369,7 @@ Finished Product Detail page:
   - Selection settings to Multi-select with Ctrl/Cmd.
   - Show "Select All" as an option in the slicer.
 
-Finished Stores Map page:
+__Finished Stores Map page:__
 
 -    <img width="1038" alt="Screenshot 2024-01-15 at 16 15 01" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/7ddf5fa2-5bdc-4192-86a6-7e63f360e098">
 
@@ -385,7 +385,7 @@ Finished Stores Map page:
       - Gauges for Profit YTD against a profit target of 20% year-on-year growth vs. the same period in the previous year, using the Target field, not the Maximum Value field.
       - A Card visual showing the currently selected store.
 
-Finished Drillthrough page:
+__Finished Drillthrough page:__
 -    <img width="1040" alt="Screenshot 2024-01-15 at 16 16 00" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/b28c47c9-936c-419b-b4b2-387b669ea5f9">
 
 
@@ -394,10 +394,10 @@ Finished Drillthrough page:
 15. Copied over the Profit Gauge visual from the drillthrough page.
 16. Set the tooltip of the visual to the Store's Tooltip page.
 
-Finished Tooltip page:
+__Finished Tooltip page:__
 -    <img width="365" alt="Screenshot 2024-01-15 at 16 17 05" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/6b24791d-4792-4198-bda6-c8584932acfb">
 
-Finished Tooltip on Map Page:
+__Finished Tooltip on Map Page:__
 -    <img width="1639" alt="Screenshot 2024-01-15 at 16 19 38" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/41b97b6c-4f4e-41b8-883c-db24b1fa4219">
 
 ---
@@ -451,7 +451,7 @@ For Example:
 16. Grouped the buttons together.
 17. Copied the group across to the other pages.
 
-Finished Navigation Bar:
+__Finished Navigation Bar:__
 - <img width="1149" alt="Screenshot 2024-01-16 at 15 26 58" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/14337b95-93f9-4a4f-a488-a8e08b2d2284">
 
 ---
