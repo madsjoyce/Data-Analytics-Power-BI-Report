@@ -664,6 +664,4 @@ LIMIT
    * Saved the SQL query to a file named [Question_5.sql](/Data-Analytics-Power-BI-Report/Question_5.sql)
 ---
 
-<span style="color: #2196F3; font-family: 'Arial Black', Gadget, sans-serif; font-size: 28px;">**Thank you for reading this project!**</span>
-
-
+![tumblr_ad890763a80960ba21a0a695fbc6f98c_df6770ee_1280](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/7dff0625-893e-43c5-891d-96246be19ff5)
