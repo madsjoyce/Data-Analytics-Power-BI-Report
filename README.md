@@ -554,8 +554,8 @@ GROUP BY
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [question_1.csv](question_1.csv)
-   * Saved the SQL query to a file named [question_1.sql](question_1.sql)
+   * Exported the result to a CSV file named [Question_1.csv](question_1.csv)
+   * Saved the SQL query to a file named [Question_1.sql](question_1.sql)
 
 
 #### <ins>Question 2: Which month in 2022 has had the highest revenue?<ins>
@@ -579,8 +579,8 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against your database.
-   * Exported the result to a CSV file named [question_2.csv](question_2.csv)
-   * Saved the SQL query to a file named [question_2.sql](question_2.sql)
+   * Exported the result to a CSV file named [Question_2.csv](question_2.csv)
+   * Saved the SQL query to a file named [Question_2.sql](question_2.sql)
 
 
 #### <ins>Question 3: Which German store type had the highest revenue for 2022?<ins>
@@ -606,8 +606,8 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [question_3.csv](question_3.csv)
-   * Saved the SQL query to a file named [question_3.sql](question_3.sql)
+   * Exported the result to a CSV file named [Question_3.csv](question_3.csv)
+   * Saved the SQL query to a file named [Question_3.sql](question_3.sql)
 
 
 
@@ -630,8 +630,8 @@ GROUP BY
 
 **Execution Steps:**   
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [question_4.csv](question_4.csv)
-   * Saved the SQL query to a file named [question_4.sql](question_4.sql)
+   * Exported the result to a CSV file named [Question_4.csv](question_4.csv)
+   * Saved the SQL query to a file named [Question_4.sql](question_4.sql)
 
 #### <ins>Question 5: Which product category generated the most profit for the "Wiltshire, UK" region in 2021?<ins>
 
@@ -658,12 +658,11 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [question_5.csv](question_5.csv)
+   * Exported the result to a CSV file named [Question_5.csv](question_5.csv)
 
-   * Saved the SQL query to a file named [question_5.sql](question_5.sql)
+   * Saved the SQL query to a file named [Question_5.sql](question_5.sql)
 ---
 
-<details>
-  <summary style="color: #2196F3; font-family: 'Arial Black', Gadget, sans-serif; font-size: 28px;">Thank you for reading this project!</summary>
-</details>
+<span style="color: #2196F3; font-family: 'Arial Black', Gadget, sans-serif; font-size: 28px;">**Thank you for reading this project!**</span>
+
 
