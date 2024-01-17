@@ -3,7 +3,7 @@
 SELECT 
        store_type, 
        country,
-        ROUND(SUM(sale_price * product_quantity)::numeric, 2) AS revenue
+        ROUND(SUM(sale_price * product_quantity)::numeric, 2) AS revenue_total
 FROM 
        forquerying2
 WHERE 
@@ -12,6 +12,4 @@ WHERE
 GROUP BY 
        store_type, country
 ORDER BY 
-       revenue DESC
-LIMIT 
-       1;
+       revenue_total DESC;

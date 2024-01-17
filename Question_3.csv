@@ -1,2 +1,5 @@
-"store_type","country","revenue"
+"store_type","country","revenue_total"
 "Local","Germany","156523.01"
+"Super Store","Germany","43536.78"
+"Mall Kiosk","Germany","22305.28"
+"Outlet","Germany","16346.61"

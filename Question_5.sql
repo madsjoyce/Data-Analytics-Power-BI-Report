@@ -14,6 +14,4 @@ GROUP BY
     category, 
     full_region
 ORDER BY 
-    total_profit DESC
-LIMIT 
-    1;
+    total_profit DESC;
