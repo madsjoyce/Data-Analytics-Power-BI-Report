@@ -450,4 +450,39 @@ Finished Navigation Bar:
 
 ## Milestone 9: Creating Metrics for Users Outside the Company Using SQL
 
+### <ins>Connecting to the Database<ins>
+
+To connect to the PostgreSQL database and ran queries from Visual Studio Code, I followed these steps:
+
+### Step 1: Installing SQLTools Extension
+
+1. Opened Visual Studio Code.
+2. Went to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or use the shortcut `Ctrl+Shift+X`.
+3. Searched for "SQLTools" in the Extensions view search bar.
+4. Found the SQLTools extension and clicked the "Install" button.
+
+### Step 2: Configuring Connection Details
+
+1. Once the SQLTools extension was installed, I clicked on the SQLTools icon in the Activity Bar.
+2. In the SQLTools view, I clicked on the "Connections" tab.
+3. Clicked on the "Add Connection" button.
+
+### Step 3: Entering Connection Details
+
+Filled in the connection details using information provided:
+
+- **Name:** Gave my connection a name (e.g., Azure Postgres).
+- **Database Type:** NA
+- **Server:** NA
+- **Port:** NA
+- **Database:** NA
+- **User:** NA
+- **Password:** NA
+
+### Step 4: Test and Save Connection
+
+After entering the connection details, I clicked the "Test Connection" button to ensure that the connection was successful.
+Now that I had successfully connected to the PostgreSQL database, I could open a new SQL file in Visual Studio Code, select my connection from the dropdown, start writing and executing SQL queries.
+
+
 ---
