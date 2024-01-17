@@ -537,7 +537,7 @@ WHERE table_name = 'your_table_name';
 ### <ins>Task 3: Query the Databases<ins>
 Please follow these next steps and the SQL queries I used to answer the following questions:
 
-#### Question 1: How many staff are there in all of the UK stores?
+#### <ins>Question 1: How many staff are there in all of the UK stores?<ins>
 
 ```sql
 -- SQL Query for Question 1
@@ -549,14 +549,16 @@ FROM
 WHERE 
     country = 'UK'
 GROUP BY 
-    country;```
+    country;
+```
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named `question_1.csv`.
-   * Saved the SQL query to a file named `question_1.sql`.
-     
-### Question 2: Which month in 2022 has had the highest revenue?
+   * Exported the result to a CSV file named [question_1.csv](question_1.csv)
+   * Saved the SQL query to a file named [question_1.sql](question_1.sql)
+
+
+#### <ins>Question 2: Which month in 2022 has had the highest revenue?<ins>
 
 ```sql
 -- SQL Query for Question 2
@@ -577,10 +579,11 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against your database.
-   * Exported the result to a CSV file named `question_2.csv`.
-   * Saved the SQL query to a file named `question_2.sql`.
+   * Exported the result to a CSV file named [question_2.csv](question_2.csv)
+   * Saved the SQL query to a file named [question_2.sql](question_2.sql)
 
-### Question 3: Which German store type had the highest revenue for 2022?
+
+#### <ins>Question 3: Which German store type had the highest revenue for 2022?<ins>
 
 ```sql
 -- SQL Query for Question 3
@@ -603,10 +606,13 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named `question_3.csv`.
-   * Saved the SQL query to a file named `question_3.sql`.
+   * Exported the result to a CSV file named [question_3.csv](question_3.csv)
+   * Saved the SQL query to a file named [question_3.sql](question_3.sql)
 
-### Question 4: Create a view with store types as rows and columns as total sales, percentage of total sales, and the count of orders
+
+
+
+#### <ins>Question 4: Create a view with store types as rows and columns as total sales, percentage of total sales, and the count of orders<ins>
 
 ```sql
 -- SQL Query for Question 4
@@ -624,10 +630,10 @@ GROUP BY
 
 **Execution Steps:**   
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named `question_4.csv`.
-   * Saved the SQL query to a file named `question_4.sql`.
+   * Exported the result to a CSV file named [question_4.csv](question_4.csv)
+   * Saved the SQL query to a file named [question_4.sql](question_4.sql)
 
-### Question 5: Which product category generated the most profit for the "Wiltshire, UK" region in 2021?
+#### <ins>Question 5: Which product category generated the most profit for the "Wiltshire, UK" region in 2021?<ins>
 
 ```sql
 -- SQL Query for Question 5
@@ -652,7 +658,12 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named `question_5.csv`.
-   * Saved the SQL query to a file named `question_5.sql`.
+   * Exported the result to a CSV file named [question_5.csv](question_5.csv)
 
+   * Saved the SQL query to a file named [question_5.sql](question_5.sql)
 ---
+
+<details>
+  <summary style="color: #2196F3; font-family: 'Arial Black', Gadget, sans-serif; font-size: 28px;">Thank you for reading this project!</summary>
+</details>
+
