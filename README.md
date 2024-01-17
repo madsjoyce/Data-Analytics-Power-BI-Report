@@ -658,9 +658,9 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_5.csv](Data-Analytics-Power-BI-Report/question_5.csv) 
+   * Exported the result to a CSV file named [Question_5.csv](Data-Analytics-Power-BI-Report/Question_5.csv) 
 
-   * Saved the SQL query to a file named [Question_5.sql](Data-Analytics-Power-BI-Report/question_5.sql)
+   * Saved the SQL query to a file named [Question_5.sql](Data-Analytics-Power-BI-Report/Question_5.sql)
 ---
 
 <span style="color: #2196F3; font-family: 'Arial Black', Gadget, sans-serif; font-size: 28px;">**Thank you for reading this project!**</span>
