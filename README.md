@@ -554,9 +554,8 @@ GROUP BY
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_1.csv](/Data-Analytics-Power-BI-Report/Question_1.csv)
-
-   * Saved the SQL query to a file named [Question_1.sql](/Data-Analytics-Power-BI-Report/Question_1.sql)
+   * Exported the result to a CSV file named [![Question_1.csv](https://img.shields.io/badge/Question_1.csv-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/49b0dce7d375d2b61987380039272db056229d13/Question_1.csv)
+   * Saved the SQL query to a file named [[Question_1.sql](/Data-Analytics-Power-BI-Report/Question_1.sql)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/49b0dce7d375d2b61987380039272db056229d13/Question_1.sql)
 
 
 #### <ins>Question 2: Which month in 2022 has had the highest revenue?<ins>
