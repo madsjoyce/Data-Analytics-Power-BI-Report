@@ -554,8 +554,9 @@ GROUP BY
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_1.csv](Data-Analytics-Power-BI-Report/Question_1.csv)
-   * Saved the SQL query to a file named [Question_1.sql](Data-Analytics-Power-BI-Report/Question_1.sql)
+   * Exported the result to a CSV file named [Question_1.csv](/Data-Analytics-Power-BI-Report/Question_1.csv)
+
+   * Saved the SQL query to a file named [Question_1.sql](/Data-Analytics-Power-BI-Report/Question_1.sql)
 
 
 #### <ins>Question 2: Which month in 2022 has had the highest revenue?<ins>
@@ -579,8 +580,8 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against your database.
-   * Exported the result to a CSV file named [Question_2.csv](Data-Analytics-Power-BI-Report/Question_2.csv)
-   * Saved the SQL query to a file named [Question_2.sql](Data-Analytics-Power-BI-Report/Question_2.sql)
+   * Exported the result to a CSV file named [Question_2.csv](/Data-Analytics-Power-BI-Report/Question_2.csv)
+   * Saved the SQL query to a file named [Question_2.sql](/Data-Analytics-Power-BI-Report/Question_2.sql)
 
 
 #### <ins>Question 3: Which German store type had the highest revenue for 2022?<ins>
@@ -606,8 +607,8 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_3.csv](Data-Analytics-Power-BI-Report/Question_3.csv)
-   * Saved the SQL query to a file named [Question_3.sql](Data-Analytics-Power-BI-Report/Question_3.sql)
+   * Exported the result to a CSV file named [Question_3.csv](/Data-Analytics-Power-BI-Report/Question_3.csv)
+   * Saved the SQL query to a file named [Question_3.sql](/Data-Analytics-Power-BI-Report/Question_3.sql)
 
 
 
@@ -630,8 +631,8 @@ GROUP BY
 
 **Execution Steps:**   
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_4.csv](Data-Analytics-Power-BI-Report/Question_4.csv)
-   * Saved the SQL query to a file named [Question_4.sql](Data-Analytics-Power-BI-Report/Question_4.sql)
+   * Exported the result to a CSV file named [Question_4.csv](/Data-Analytics-Power-BI-Report/Question_4.csv)
+   * Saved the SQL query to a file named [Question_4.sql](/Data-Analytics-Power-BI-Report/Question_4.sql)
 
 #### <ins>Question 5: Which product category generated the most profit for the "Wiltshire, UK" region in 2021?<ins>
 
@@ -658,9 +659,9 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_5.csv](Data-Analytics-Power-BI-Report/Question_5.csv) 
+   * Exported the result to a CSV file named [Question_5.csv](/Data-Analytics-Power-BI-Report/Question_5.csv) 
 
-   * Saved the SQL query to a file named [Question_5.sql](Data-Analytics-Power-BI-Report/Question_5.sql)
+   * Saved the SQL query to a file named [Question_5.sql](/Data-Analytics-Power-BI-Report/Question_5.sql)
 ---
 
 <span style="color: #2196F3; font-family: 'Arial Black', Gadget, sans-serif; font-size: 28px;">**Thank you for reading this project!**</span>
