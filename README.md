@@ -202,6 +202,9 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 ## Adding a Date Sliccer
 12. Added a date slicer to allow users to filter the page by year, using the between slicer style. I did this by selecting the date slicer visualisation, and only adding Year to the field in Build a visual.
 
+Finished Customer Details page:
+- <img width="1067" alt="Screenshot 2024-01-17 at 17 46 46" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/4aa876dd-ba27-4594-b3d5-b588520b663b">
+
 ---
 
 # Milestone 5: Creating an Executive Summary Page
@@ -287,6 +290,9 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 22. Duplicated the card two more times.
 23. Set appropriate values for the Profit and Orders cards.
 
+Finished Executive Summary Page:
+- <img width="1068" alt="Screenshot 2024-01-17 at 17 47 32" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/6ad753de-2d4e-48b2-8cc5-47169aa6582b">
+
 ---
 # Milestone 6: Creating a Product Detail Page
 
@@ -339,6 +345,9 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 25. Created bookmarks for open and closed states of the toolbar.
 26. Assigned actions to buttons using bookmarks.
 
+Finished Product Detail page:
+- <img width="1070" alt="Screenshot 2024-01-17 at 17 48 38" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/8f6fdb58-7b52-4d25-93c5-d19f4d9b7a40">
+
 ---
 
 ## Milestone 7: Creating a Stores Map Page
@@ -363,7 +372,6 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 Finished Stores Map page:
 
 -    <img width="1038" alt="Screenshot 2024-01-15 at 16 15 01" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/7ddf5fa2-5bdc-4192-86a6-7e63f360e098">
-
 
 ## Task 3: Create a Store Drillthrough Page
 8. Created a new page named `Stores Drillthrough`.
