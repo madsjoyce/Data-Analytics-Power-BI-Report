@@ -554,8 +554,9 @@ GROUP BY
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [![Question_1.csv](https://img.shields.io/badge/Question_1.csv-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/49b0dce7d375d2b61987380039272db056229d13/Question_1.csv)
-   * Saved the SQL query to a file named [[Question_1.sql](/Data-Analytics-Power-BI-Report/Question_1.sql)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/49b0dce7d375d2b61987380039272db056229d13/Question_1.sql)
+   * Exported the result to a CSV file named: [![Question_1.csv](https://img.shields.io/badge/Question_1.csv-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/49b0dce7d375d2b61987380039272db056229d13/Question_1.csv)
+   * Saved the SQL query to a file named: [![Question_1.sql](https://img.shields.io/badge/Question_1.sql-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/49b0dce7d375d2b61987380039272db056229d13/Question_1.sql)
+
 
 
 #### <ins>Question 2: Which month in 2022 has had the highest revenue?<ins>
@@ -579,9 +580,8 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against your database.
-   * Exported the result to a CSV file named [Question_2.csv](/Data-Analytics-Power-BI-Report/Question_2.csv)
-   * Saved the SQL query to a file named [Question_2.sql](/Data-Analytics-Power-BI-Report/Question_2.sql)
-
+   * Exported the result to a CSV file named: [![Question_2.csv](https://img.shields.io/badge/Question_2.csv-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_2.csv)
+   * Saved the SQL query to a file named: [![Question_2.sql](https://img.shields.io/badge/Question_2.sql-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_2.sql)
 
 #### <ins>Question 3: Which German store type had the highest revenue for 2022?<ins>
 
@@ -606,11 +606,8 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_3.csv](/Data-Analytics-Power-BI-Report/Question_3.csv)
-   * Saved the SQL query to a file named [Question_3.sql](/Data-Analytics-Power-BI-Report/Question_3.sql)
-
-
-
+   * Exported the result to a CSV file named: [![Question_3.csv](https://img.shields.io/badge/Question_3.csv-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_3.csv)
+   * Saved the SQL query to a file named: [![Question_3.sql](https://img.shields.io/badge/Question_3.sql-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_3.sql)
 
 #### <ins>Question 4: Create a view with store types as rows and columns as total sales, percentage of total sales, and the count of orders<ins>
 
@@ -630,8 +627,10 @@ GROUP BY
 
 **Execution Steps:**   
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_4.csv](/Data-Analytics-Power-BI-Report/Question_4.csv)
-   * Saved the SQL query to a file named [Question_4.sql](/Data-Analytics-Power-BI-Report/Question_4.sql)
+   * Exported the result to a CSV file named: [[![Question_4.csv](https://img.shields.io/badge/Question_4.csv-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_4.csv)
+
+   * Saved the SQL query to a file named: [![Question_4.sql](https://img.shields.io/badge/Question_4.sql-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_4.sql)
+
 
 #### <ins>Question 5: Which product category generated the most profit for the "Wiltshire, UK" region in 2021?<ins>
 
@@ -658,9 +657,9 @@ LIMIT
 
 **Execution Steps:**
    * Executed the SQL query against my database.
-   * Exported the result to a CSV file named [Question_5.csv](/Data-Analytics-Power-BI-Report/Question_5.csv) 
+   * Exported the result to a CSV file named: [![Question_5.csv](https://img.shields.io/badge/Question_5.csv-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_5.csv)
+   * Saved the SQL query to a file named: [![Question_5.sql](https://img.shields.io/badge/Question_5.sql-View%20File-blue)](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/blob/fe5dfb1a1396a5612e8d5918e3dea0d512175d12/Question_5.sql)
 
-   * Saved the SQL query to a file named [Question_5.sql](/Data-Analytics-Power-BI-Report/Question_5.sql)
 ---
 And finally...
 > Through this project, I embarked on a comprehensive journey in data analytics using Power BI and SQL tools. From importing and transforming data tables to creating a robust data model, each milestone brought unique challenges and learning opportunities. Navigating through various SQL queries enhanced my understanding of database exploration and querying, particularly in the context of real-world scenarios like calculating staff numbers across UK stores. The creation of interactive and visually appealing Power BI reports, complete with cross-filtering mechanisms and navigation bars, further solidified my grasp of data visualisation techniques. This project has equipped me with valuable skills in data manipulation, model creation, and insightful report design, forming a solid foundation for future endeavors in data analytics. I extend my gratitude to the readers for engaging with this journey, and I hope the insights shared prove beneficial in their own data exploration and analysis endeavors!
