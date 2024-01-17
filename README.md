@@ -663,6 +663,7 @@ LIMIT
 
    * Saved the SQL query to a file named [Question_5.sql](/Data-Analytics-Power-BI-Report/Question_5.sql)
 ---
+And finally...
 > Through this project, I embarked on a comprehensive journey in data analytics using Power BI and SQL tools. From importing and transforming data tables to creating a robust data model, each milestone brought unique challenges and learning opportunities. Navigating through various SQL queries enhanced my understanding of database exploration and querying, particularly in the context of real-world scenarios like calculating staff numbers across UK stores. The creation of interactive and visually appealing Power BI reports, complete with cross-filtering mechanisms and navigation bars, further solidified my grasp of data visualisation techniques. This project has equipped me with valuable skills in data manipulation, model creation, and insightful report design, forming a solid foundation for future endeavors in data analytics. I extend my gratitude to the readers for engaging with this journey, and I hope the insights shared prove beneficial in their own data exploration and analysis endeavors!
 
 ![tumblr_ad890763a80960ba21a0a695fbc6f98c_df6770ee_1280](https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/7dff0625-893e-43c5-891d-96246be19ff5)
