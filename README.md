@@ -157,6 +157,7 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 **Model View:** Please see the screenshot below for the up-to-date model view for this project.
 
 ![Screenshot of Current Model](<Images/Screenshot 2024-01-08 at 12.03.29.png>)
+
 ---
 
 # Milestone 3: Setting up the Report
