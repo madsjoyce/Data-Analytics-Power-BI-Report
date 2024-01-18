@@ -351,7 +351,7 @@ __Finished Product Detail page:__
 
 ---
 
-## Milestone 7: Creating a Stores Map Page
+# Milestone 7: Creating a Stores Map Page
 
 ## Task 1: Adding a Map Visual
 1. On the Stores Map page, I added a new map visual from the visualisations section.
@@ -403,7 +403,7 @@ __Finished Tooltip on Map Page:__
 
 ---
 
-## Milestone 8: Cross Filtering and Navigation
+# Milestone 8: Cross Filtering and Navigation
 
 ## Task 1: Fix Cross Filtering
 To do this, I clicked on the 'Edit Interactions' button for the visualisation I wanted to cross-filter. I then selected the filter icon and selected the correct type of cross filtering needed for the other visualisations.
@@ -457,7 +457,7 @@ __Finished Navigation Bar:__
 
 ---
 
-## Milestone 9: Creating Metrics for Users Outside the Company Using SQL
+# Milestone 9: Creating Metrics for Users Outside the Company Using SQL
 
 ### <ins>Task 1: Connecting to the Database<ins>
 
