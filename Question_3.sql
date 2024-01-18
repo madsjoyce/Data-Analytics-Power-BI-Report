@@ -12,4 +12,5 @@ WHERE
 GROUP BY 
        store_type, country
 ORDER BY 
-       revenue_total DESC;
+       revenue_total DESC
+LIMIT 1;

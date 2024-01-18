@@ -10,4 +10,5 @@ WHERE
 GROUP BY 
     month_name
 ORDER BY 
-    revenue_total DESC;
+    revenue_total DESC
+LIMIT 1;
