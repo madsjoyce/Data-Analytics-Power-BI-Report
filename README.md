@@ -413,7 +413,7 @@ For example, in this cross filtering for the Total Customers by Product Bar Char
 
 <img width="1209" alt="Screenshot 2024-01-16 at 11 54 00" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/4735621a-a027-40c9-8fbe-5afe723a3abe">
 
-## Here's the cross-filtering I did for this report's pages:
+__Here is the cross-filtering I did for this report's pages:__
 
 ### Executive Summary Page
 1. Product Category bar chart and Top 10 Products table not filtering the card visuals or KPIs.
