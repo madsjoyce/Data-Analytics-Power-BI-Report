@@ -3,15 +3,15 @@
 
 # Table of Contents
 
-1. [Milestone 1: Importing and Preparing Orders Table](#milestone-1-importing-and-preparing-orders-table)
-2. [Milestone 2: Creating the Data Model](#milestone-2-creating-the-data-model)
-3. [Milestone 3: Setting up the Report](#milestone-3-setting-up-the-report)
-4. [Milestone 4: Building the Customer Detail Page](#milestone-4-building-the-customer-detail-page)
-5. [Milestone 5: Creating an Executive Summary Page](#milestone-5-creating-an-executive-summary-page)
-6. [Milestone 6: Creating a Product Detail Page](#milestone-6-creating-a-product-detail-page)
-7. [Milestone 7: Creating a Stores Map Page](#milestone-7-creating-a-stores-map-page)
-8. [Milestone 8: Cross Filtering and Navigation](#milestone-8-cross-filtering-and-navigation)
-9. [Milestone 9: Creating Metrics for Users Outside the Company Using SQL](#milestone-9-creating-metrics-for-users-outside-the-company-using-sql)
+[1: Importing and Preparing Orders Table](#1-importing-and-preparing-orders-table)
+[2: Creating the Data Model](#2-creating-the-data-model)
+[3: Setting up the Report](#3-setting-up-the-report)
+[4: Building the Customer Detail Page](#4-building-the-customer-detail-page)
+[5: Creating an Executive Summary Page](#5-creating-an-executive-summary-page)
+[6: Creating a Product Detail Page](#6-creating-a-product-detail-page)
+[7: Creating a Stores Map Page](#7-creating-a-stores-map-page)
+[8: Cross Filtering and Navigation](#8-cross-filtering-and-navigation)
+[9: Creating Metrics for Users Outside the Company Using SQL](#9-creating-metrics-for-users-outside-the-company-using-sql)
 
 ---
 **Note:** As I am a Mac user, I first had to create a Windows VM for this project. These are the steps I followed in order to do this:
@@ -20,7 +20,7 @@
 3. Connect my VM to my local machine. I did this by Utilising Microsoft Remote Desktop.
 
 --- 
-# Milestone 1: Importing and Preparing Orders Table
+# 1: Importing and Preparing Orders Table
 
 
 Below are three different dataframes that I needed to import and transform as part of my project. Each section reveals the steps I took to do this.
@@ -75,7 +75,7 @@ This milestone involved connecting to various data sources, importing tables int
 
 
 ---
-# Milestone 2: Creating the Data Model
+# 2: Creating the Data Model
 
 
 ## Continuous Date Table Creation
@@ -160,7 +160,7 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 
 ---
 
-# Milestone 3: Setting up the Report
+# 3: Setting up the Report
 
 1. **Creating report pages:** Created an Executive Summary page, Customer Detail page, Product Detail page and Stores Map page.
 2. **Selecting a colour theme:** I selected a colour theme that I thought would look good as a finished report. 
@@ -168,7 +168,7 @@ Created the following Key Meausres in the Measures_Table using the following DAX
 
 ---
 
-# Milestone 4: Building the Customer Detail Page
+# 4: Building the Customer Detail Page
 
 ## Creating Headline Card Visiuals 
 1. Created two rectangles and arrange them in the top left corner of the page. These served as the backgrounds for the card visuals.
@@ -208,7 +208,7 @@ __Finished Customer Details page:__
 
 ---
 
-# Milestone 5: Creating an Executive Summary Page
+# 5: Creating an Executive Summary Page
 
 ## Copying and Arranging Cards:
 
@@ -295,7 +295,7 @@ __Finished Executive Summary Page:__
 - <img width="1068" alt="Screenshot 2024-01-17 at 17 47 32" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/6ad753de-2d4e-48b2-8cc5-47169aa6582b">
 
 ---
-# Milestone 6: Creating a Product Detail Page
+# 6: Creating a Product Detail Page
 
 ## Gauges for Current-Quarter Performance
 
@@ -351,7 +351,7 @@ __Finished Product Detail page:__
 
 ---
 
-# Milestone 7: Creating a Stores Map Page
+# 7: Creating a Stores Map Page
 
 ## Task 1: Adding a Map Visual
 1. On the Stores Map page, I added a new map visual from the visualisations section.
@@ -403,7 +403,7 @@ __Finished Tooltip on Map Page:__
 
 ---
 
-# Milestone 8: Cross Filtering and Navigation
+# 8: Cross Filtering and Navigation
 
 ## Task 1: Fix Cross Filtering
 To do this, I clicked on the 'Edit Interactions' button for the visualisation I wanted to cross-filter. I then selected the filter icon and selected the correct type of cross filtering needed for the other visualisations.
@@ -457,7 +457,7 @@ __Finished Navigation Bar:__
 
 ---
 
-# Milestone 9: Creating Metrics for Users Outside the Company Using SQL
+# 9: Creating Metrics for Users Outside the Company Using SQL
 
 ### <ins>Task 1: Connecting to the Database<ins>
 
