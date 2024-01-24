@@ -4,14 +4,23 @@
 # Table of Contents
 
 [1: Importing and Preparing Orders Table](#1-importing-and-preparing-orders-table)
+
 [2: Creating the Data Model](#2-creating-the-data-model)
+
 [3: Setting up the Report](#3-setting-up-the-report)
+
 [4: Building the Customer Detail Page](#4-building-the-customer-detail-page)
+
 [5: Creating an Executive Summary Page](#5-creating-an-executive-summary-page)
+
 [6: Creating a Product Detail Page](#6-creating-a-product-detail-page)
+
 [7: Creating a Stores Map Page](#7-creating-a-stores-map-page)
+
 [8: Cross Filtering and Navigation](#8-cross-filtering-and-navigation)
+
 [9: Creating Metrics for Users Outside the Company Using SQL](#9-creating-metrics-for-users-outside-the-company-using-sql)
+
 
 ---
 **Note:** As I am a Mac user, I first had to create a Windows VM for this project. These are the steps I followed in order to do this:
