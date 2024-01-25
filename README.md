@@ -403,12 +403,14 @@ __Finished Drillthrough page:__
 14. Created a new page named Store's Tooltip.
 15. Copied over the Profit Gauge visual from the drillthrough page.
 16. Set the tooltip of the visual to the Store's Tooltip page.
+17. Added two visual cards that showed the country and the region selected.
+18. Made sure the size of the tooltip page fit the tooltip, to make sure that it didn't take up too much room on the Stores Map page.  I did this by entering a custom size on the 'canvas settings' section on the page's format pane.
 
 __Finished Tooltip page:__
--    <img width="365" alt="Screenshot 2024-01-15 at 16 17 05" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/6b24791d-4792-4198-bda6-c8584932acfb">
+-    <img width="1213" alt="Screenshot 2024-01-25 at 11 24 17" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/0151c4d6-8b89-4f84-b915-a3e25754f470">
 
 __Finished Tooltip on Map Page:__
--    <img width="1639" alt="Screenshot 2024-01-15 at 16 19 38" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/41b97b6c-4f4e-41b8-883c-db24b1fa4219">
+-  <img width="1680" alt="Screenshot 2024-01-25 at 11 25 20" src="https://github.com/madsjoyce/Data-Analytics-Power-BI-Report/assets/150938429/5b271982-1b40-460b-9090-ee08a9fa0748">
 
 ---
 
